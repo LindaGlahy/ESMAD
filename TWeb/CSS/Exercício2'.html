@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercícios CSS</title>
+  <style>
+    /* Estilos gerais */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    h1 {
+      color: #00509e;
+    }
+
+    .section {
+      padding: 10px;
+      margin-bottom: 20px;
+      background: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Exemplo de Box Model */
+    .box-model {
+      width: 200px;
+      padding: 25px;
+      border: 25px solid navy;
+      margin: 25px auto;
+    }
+
+    /* Exemplo de Borda */
+    .border-example p {
+      border: 4px dotted red;
+      padding: 10px;
+    }
+
+    .border-top {
+      border-top: 4px solid navy;
+      padding-top: 10px;
+    }
+
+    /* Exemplo de Borda Verde */
+    .border-green {
+      border: 10px solid green;
+      padding: 10px;
+    }
+
+    /* Pseudo-classes para Links */
+    a:link,
+    a:visited {
+      background-color: lightblue;
+      color: #333;
+      padding: 4px 8px;
+      text-decoration: none;
+      border-radius: 3px;
+    }
+
+    a:hover {
+      background-color: yellow;
+    }
+
+    a:active {
+      background-color: red;
+    }
+
+    /* Efeito de Hover no Parágrafo */
+    .highlight:hover {
+      background-color: lightblue;
+      padding: 5px;
+      border-radius: 3px;
+    }
+
+    /* Cor para Primeiro Filho */
+    p:first-child {
+      background-color: lightblue;
+      padding: 5px;
+      border-radius: 3px;
+    }
+
+    /* Foco no Input */
+    input:focus {
+      background-color: lightblue;
+      outline: none;
+      border: 1px solid #00509e;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Praticando com CSS</h1>
+
+  <!-- Exemplo de Box Model -->
+  <div class="section">
+    <h2>Box Model</h2>
+    <div class="box-model">Div com largura, padding, borda e margem configurados.</div>
+  </div>
+
+  <!-- Exemplo de Borda com Topo -->
+  <div class="section border-example">
+    <h2>Borda com Topo</h2>
+    <p class="border-top">Parágrafo com borda no topo.</p>
+  </div>
+
+  <!-- Exemplo de Borda Verde -->
+  <div class="section">
+    <h2>Borda Verde</h2>
+    <p class="border-green">Parágrafo com borda verde e sólida.</p>
+  </div>
+
+  <!-- Links com Pseudo-classes -->
+  <div class="section">
+    <h2>Links com Efeitos</h2>
+    <a href="#">Exemplo de Link</a>
+  </div>
+
+  <!-- Parágrafo com Hover -->
+  <div class="section">
+    <h2>Hover no Parágrafo</h2>
+    <p class="highlight">Passe o mouse para ver o efeito de destaque.</p>
+  </div>
+
+  <!-- Cor no Primeiro Filho -->
+  <div class="section">
+    <h2>Primeiro Filho</h2>
+    <p>Este é o primeiro parágrafo.</p>
+    <p>Outro parágrafo sem efeito.</p>
+  </div>
+
+  <!-- Foco no Input -->
+  <div class="section">
+    <h2>Foco no Input</h2>
+    <input type="text" placeholder="Clique ou foque para ver o efeito">
+  </div>
+
+</body>
+
+</html>
