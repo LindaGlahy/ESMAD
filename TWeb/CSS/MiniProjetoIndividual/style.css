@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    font-family: "poppins", "sans-serif";
+}
+
+.header {
+    background-color: #ffffff;
+    height: 60px;
+    border: 20px;
+    position: sticky;
+    top: 0;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+.fraseQuo {
+    background-color: #ffab1b;
+    padding: 5px;
+    padding-bottom: 20px;
+    height: cover;
+    width: cover;
+}
+
+.frase {
+    font-family: "Candara";
+    text-align: center;
+}
+
+.header img {
+    padding-left: 3px;
+    margin-top: 5px;
+}
+
+.banner {
+    background-image: url(/TWeb/CSS/MiniProjetoIndividual/peopleCooking.webp);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+.conteudo {
+    display: flex;
+}
+
+.card {
+    font-size: 10px;
+    text-align: center;
+    margin: 10px;
+    background-color: #fff;
+    width: 300px;
+    height: 200px;
+    border-radius: 25px;
+    box-shadow: rgba(255, 157, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.card>img {
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
