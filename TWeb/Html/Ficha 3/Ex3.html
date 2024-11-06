@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="#" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Escreva o seu nome" minlength="3" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Escreva o seu email" required>
+        <br>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required>
+        <br>
+        <label for="data-nascimento">Data de Nascimento:</label>
+        <input type="date" id="data-nascimento" name="data-nascimento">
+        <br>
+        <label for="nacionalidade">Nacionalidade:</label>
+        <select id="nacionalidade" name="nacionalidade">
+            <option>Nacionalidade</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Espanha">Espanha</option>
+            <option value="França">França</option>
+        </select>
+        <br>
+        <label for="palavra-passe">Palavra-passe</label>
+        <input type="password" id="palavra-passe" name="palavra-passe" minlength="8" required pattern="^(?=.*[a-z])(?=.*[A-Z]).{8,}$" title="A palavra-passe deve ter no mínimo 8 caracteres, incluindo letras maiúsculas e minúsculas.">
+        <br>
+        <button type="submit">Submeter formulário</button>
+    </form>
+</body>
+</html>

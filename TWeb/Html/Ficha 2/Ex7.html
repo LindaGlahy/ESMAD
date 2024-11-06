@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+
+    <form action="form.html" method="POST">
+
+        <fieldset>
+            <legend>Personal info</legend>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required pattern="[A-Z][a-z]+\s[A-Z][a-z]+" title="O nome deve começar com letra maiúscula e ser composto por dois nomes">
+            <br>
+            <label>Membership</label>
+            <input type="radio" id="member" name="membership" value="member" required>
+            <label for="member">Member</label>
+            <input type="radio" id="non-member" name="membership" value="non-member" required>
+            <label for="non-member">Non-Member</label>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Reservation info</legend>
+
+            <label for="facility">Facility</label>
+            <select id="facility" name="facility" required>
+                <option value="badminton">Badminton</option>
+                <option value="squash">Squash</option>
+                <option value="racquetball">Racquetball</option>
+            </select>
+            <br>
+            <label for="reservation-time">Select a reservation date and time</label>
+            <input type="datetime-local" id="reservation-time" name="reservation-time" required>
+            <br>
+            <label>
+                <input type="checkbox" name="agree" required>
+                I agree to the club’s reservation policy
+            </label>
+            <br><br>
+        </fieldset>
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>

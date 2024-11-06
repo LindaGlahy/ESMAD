@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    
+    <form action="https://www.webucator.com/materials/htm101/" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        
+        <label for="pw">Password:</label>
+        <input type="password" id="pw" name="pw"><br><br>
+        
+        <input type="hidden" id="emailMe" name="emailMe" value="seuemail@exemplo.com">
+        
+        <label for="genderm">Male</label>
+        <input type="radio" id="genderm" name="gender" value="m">
+        <label for="genderf">Female</label>
+        <input type="radio" id="genderf" name="gender" value="f"><br><br>
+        
+        <label for="terms">Click to accept our terms:</label>
+        <input type="checkbox" id="terms" name="terms"><br><br>
+        
+        <label for="referral">Where did you hear about us?</label>
+        <select id="referral" name="referral">
+            <option value="0">–Please choose–</option>
+            <option value="wom">Word of Mouth</option>
+            <optgroup label="Search Engine">
+                <option value="Google">Google</option>
+                <option value="Yahoo">Yahoo!</option>
+                <option value="MSN">MSN</option>
+            </optgroup>
+        </select><br><br>
+        
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" cols="30" rows="5"></textarea><br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset"><br><br>
+    </form>
+</body>
+</html>
