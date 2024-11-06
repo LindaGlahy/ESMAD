@@ -1,0 +1,41 @@
+body {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    font-family: "Malgun Gothic Boot";
+    font-size: 16px;
+}
+
+section {
+    padding: 80px;
+}
+
+.shoe {
+    border: 4px solid #ececec;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.shoe_image {
+    border-radius: 20px;
+    width: 400px;
+}
+
+.shoe_category {
+    color: #0e855b;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+.shoe_name {
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.shoe_price {
+    margin-top: 5px;
+    margin-bottom: 0;
+}

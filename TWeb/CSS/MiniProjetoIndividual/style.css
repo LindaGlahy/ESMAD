@@ -47,9 +47,6 @@ body {
     height: 300px;
 }
 
-.conteudo {
-    display: flex;
-}
 
 main.cards {
     display: flex;
