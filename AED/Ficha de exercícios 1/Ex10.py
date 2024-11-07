@@ -1,7 +1,3 @@
-'''Simulador de peso noutros planetas,em função da seu gravidade relativa
-https://ecoosfera.com/sci-innovacion/cuanto-pesarias-en-otros-planetas/
-'''
-
 print ('      Planetas')
 print ('    1 - Mercúrio')
 print ('    2 - Venus')

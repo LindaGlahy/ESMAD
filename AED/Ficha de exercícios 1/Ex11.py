@@ -1,7 +1,3 @@
-'''Programa que determina em qual etapa da vida mediante a idade colocada
-https://reyabogado.com/brasil/qual-a-idade-de-cada-fase-da-vida/#:~:text=Abaixo%20est%C3%A3o%20descritas%20as%209%20fases%20da%20vida,8%208.%20Velhice%20%2865%20a%2079%20anos%29%3A%20
-'''
-
 print ('\nDescubra em qual etapa da vida estais!')
 idade = int(input('\nInsira sua idade: '))
 
