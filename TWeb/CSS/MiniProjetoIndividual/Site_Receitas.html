@@ -7,34 +7,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header">
-        <img class="logo" src="/TWeb/CSS/MiniProjetoIndividual/logoSite.png" style="height: 50px;">
+        <a href="#" class="logo">Your recipe<span>.</span></a>
+        <nav>
+            <a class="navbar" href="paginaInicial">Página Inicial</a>
+            <a class="navbar" href="sobre">Sobre Nós</a>
+            <a class="navbar" href="receitas">Receitas</a>
+            <a class="navbar" href="contatos">Contatos</a>
+        </nav>
         <br>
     </div>
-    <div class="banner"></div>
-    <div class="fraseQuo">
-        <br>
-        <h2 class="frase">"Se somos aquilo que comemos, então só quero comer coisas boas"</h2>
-        <br>
-        <h3 class="frase">— Gusteau, Auguste —</h3>
+    <div class="banner">
+        <p class="frase">
+            <h1>"Se somos aquilo que comemos, então só quero comer coisas boas."</h1>
+            - Gusteau, August
+        </p>
     </div>
     <br>
+    <p>Nossos destaques</p>
     <br>
-    <br>
-    <main class="cards">
-        <section class="card">
-            <img src="/TWeb/CSS/MiniProjetoIndividual/Strogonoff.webp" alt="Strogonoff de Frango">
-            <h1>Strogonoff de Frango</h1>
-            <button>Vamos lá!</button>
-        </section>
-        <section class="card">
-            <img src="/TWeb/CSS/MiniProjetoIndividual/SaladCeasar.jpg" alt="Salada Ceasar">
-            <h1>Salada Ceasar</h1>
-            <button>Vamos lá!</button>
-        </section>
-    </main>
+    <div class="boxes" tag="destaque">
+        <div class="cards" tag="frango">
+            <section class="card">
+                <a href="https://www.tudogostoso.com.br/receita/2462-strogonoff-de-frango.html"></a>
+                <img class="receipeImage" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/Strogonoff.webp" alt="Strogonoff de Frango">
+            </section>
+            <h1 class="titlereceitas">Strogonoff de Frango</h1>
+            </a>
+        </div>
+        <div class="cards" tag="salada">
+            <section class="card">
+                <a href="https://www.tudogostoso.com.br/receita/7329-salada-caesar.html"></a>
+                <img src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/SaladCeasar.jpg" alt="Salada Ceasar">
+            </section>
+            <h1 class="titlereceitas">Salada Ceasar</h1>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
