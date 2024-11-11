@@ -8,5 +8,5 @@ elif numero == 0:
 
 for i in range(1, numero):
     numero *= i
-
+    
 print ("O fatorial é ", numero)

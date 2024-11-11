@@ -15,7 +15,7 @@ def pluviosidade2(listPluvio):
     print("\n")
     print("Meses \t Pluviosidade")
     for i in range(12):
-        pos = listPluvio.index(listPluvio2)
+        pos = listPluvio.index(listPluvio2[i])
         print(meses[pos], "\t", listPluvio2[i])
 
 listPluvio = []

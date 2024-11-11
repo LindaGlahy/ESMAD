@@ -2,7 +2,7 @@ def searchNumber(listNumber,search):
     '''
     '''
 
-    numberSearch = listNumber.find(search)
+    numberSearch = listNumber.index(search)
     return (numberSearch)
 
 listNumber = []
