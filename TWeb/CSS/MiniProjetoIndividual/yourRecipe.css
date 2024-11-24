@@ -13,6 +13,10 @@
     font-style: normal;
 } 
 
+body {
+    background-color: whitesmoke;
+}
+
 .header {
     overflow: hidden;
     width: 100%;
@@ -27,79 +31,8 @@
     z-index: 9;
 }
 
-.header a {
-    float: left;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px; 
-    line-height: 25px;
-    border-radius: 4px;
-  }
-
-@media screen and (max-width: 500px) {
-    .header a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .header-right {
-      float: none;
-    }
-}
-
-/* Estilo básico para o slider */
-.tagpart {
-    display: flex; /* Para alinhar os itens em linha */
-    overflow-x: auto; /* Ativa a rolagem horizontal */
-    gap: 16px; /* Espaçamento entre os itens */
-    scroll-snap-type: x mandatory; /* Facilita o snapping no scroll */
-    padding: 10px;
-}
-
-.tag {
-    flex: 0 0 auto; /* Garante que os itens não encolham nem cresçam */
-    scroll-snap-align: start; /* Alinha os itens ao início ao rolar */
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    background-color: #f9f9f9;
-}
-
-.tag:hover {
-    transform: scale(1.05); /* Efeito de destaque ao passar o mouse */
-}
-
-.tag a {
-    display: block;
-    text-decoration: none;
-    color: #333;
-}
-
-.slide {
-    width: 100%;
-    height: auto;
-    max-height: 200px; /* Controla a altura da imagem */
-    object-fit: cover; /* Garante que a imagem se ajuste */
-    border-bottom: 4px solid #e2e2e2;
-}
-
-/* Para mobile: controlar a largura dos itens */
-@media (max-width: 768px) {
-    .tag {
-        flex: 0 0 70%; /* Cada item ocupa 70% da largura */
-    }
-}
-
-@media (min-width: 769px) {
-    .tag {
-        flex: 0 0 30%; /* Em telas maiores, 30% da largura */
-    }
-}
-
 .logo {
-    font-size: 60px;
+    font-size: 40px;
     color: orange;
     font-weight: 600;
     font-family: "Anton SC";
@@ -111,16 +44,65 @@
     color: orangered;
 }
 
-.navbar {
-    justify-content: end;
-    justify-items: end;
-}
-
 .navbar>a {
     color: orange;
-    text-decoration: none;
-    padding-right: 70px;
     justify-content: space-between;
+    justify-content: end;
+    float: left;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+}
+
+.tagpart {
+    display: flex;
+    width: 1030px;
+    gap: 16px;
+    padding: 10px;
+}
+
+.tag {
+    width: 150px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.tag:hover {
+    transform: scale(1.05); 
+}
+
+.tag a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    flex: 0 0 70%;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-bottom: 4px solid #e2e2e2;
+}
+
+@media (max-width: 768px) {
+    .tag {
+        flex: 0 0 70%; /* Cada item ocupa 70% da largura */
+        width: 100%;
+        grid-column: 1;
+    }
+}
+
+@media (min-width: 769px) {
+    .tag {
+        flex: 0 0 30%; /* Em telas maiores, 30% da largura */
+    }
 }
 
 p {
@@ -133,7 +115,6 @@ p {
     justify-content: space-around;
     font-size: 10px;
     text-align: center;
-    background-color: white;
     padding-left: 50px;
     padding-right: 50px;
 }
