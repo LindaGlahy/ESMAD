@@ -13,93 +13,102 @@
     <link rel="stylesheet" href="yourRecipe.css">
 </head>
 <body>
-    <div class="header">
-        <a href="#" class="logo">Your recipe<span>.</span></a>
-        <nav class="navbar">
-            <a href="#">Sobre nós </a>
-            <a href="#">Receitas </a>
-            <a href="#">Contato </a>
-        </nav>
-        <br>
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="tagpart">
-        <div class="tag" >
-            <a href="https://www.tudogostoso.com.br/receita/7329-salada-caesar.html">
-                <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/entradas.jpg">
-                Entradas
-            </a>
-        </div>
-        <div class="tag" >
-            <a href="#" target="_blank">
-                <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/principal.png">
-                Principais
-            </a>
-        </div>
-        <div class="tag" >
-            <a href="#" target="_blank">
-                <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/sobremesa.webp">
-                Sobremesas
-            </a>
-        </div>
-        <div class="tag" >
-            <a href="#" target="_blank">
-                <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/CoquetelGranizadoMelancia.webp">
-                Bebidas
-            </a>
+    <div class="container">
+        <div class="header">
+            <a href="#" class="logo">Your recipe<span>.</span></a>
+            <nav class="navbar">
+                <a href="#">Sobre nós </a>
+                <a href="#">Receitas </a>
+                <a href="#">Contato </a>
+            </nav>
+            <search id="search">
+                <form action="./search/">
+                  <input type="search" id="receitas" placeholder="  Search..." name="q" />
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </search>
         </div>
         <br>
-    </div>
-    <br>
-    <p>Nossos destaques</p>
-    <br>
-    <div class="boxes" tag="destaque">
-        <div class="cards" tagtag="frango">
-            <section class="card">
-                <a href="https://www.tudogostoso.com.br/receita/2462-strogonoff-de-frango.html" target="_self">Salada Ceasar</a>
-                <img class="receipeImage" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/Strogonoff.webp" alt="Strogonoff de Frango">
-            </section>
-            </a>
+        <br>
+        <br>
+        <div class="tagpart">
+            <div class="tag" >
+                <a href="https://www.tudogostoso.com.br/receita/7329-salada-caesar.html">
+                    <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/entradas.jpg">
+                    Entradas
+                </a>
+            </div>
+            <div class="tag" >
+                <a href="#" target="_blank">
+                    <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/principal.png">
+                    Principais
+                </a>
+            </div>
+            <div class="tag" >
+                <a href="#" target="_blank">
+                    <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/sobremesa.webp">
+                    Sobremesas
+                </a>
+            </div>
+            <div class="tag" >
+                <a href="#" target="_blank">
+                    <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/CoquetelGranizadoMelancia.webp">
+                    Bebidas
+                </a>
+            </div>
+            <br>
         </div>
-        <div class="cards" tag="salada">
-            <section class="card">
-                <a href="https://www.tudogostoso.com.br/receita/7329-salada-caesar.html">Salada Ceasar</a>
-                <img src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/SaladCeasar.jpg" alt="Salada Ceasar">
-            </section>
-            </a>
+        <br>
+        <p>Nossos destaques</p>
+        <br>
+        <div class="boxes" tag="destaque">
+            <div class="cards" tagtag="frango">
+                <section class="card">
+                    <a href="https://www.tudogostoso.com.br/receita/2462-strogonoff-de-frango.html" target="_self"></a>
+                    <img class="receipeImage" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/Strogonoff.webp" alt="Strogonoff de Frango">
+                    <p class="cardName">Strogonoff de Frango</p>
+                </section>
+                </a>
+            </div>
+            <div class="cards" tag="salada">
+                <section class="card">
+                    <a href="https://www.tudogostoso.com.br/receita/7329-salada-caesar.html"></a>
+                    <img src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/SaladCeasar.jpg" alt="Salada Ceasar">
+                    Salada Ceasar
+                </section>
+                </a>
+            </div>
+            <div class="cards" tag="carne">
+                <section class="card">
+                    <a href="https://www.tudogostoso.com.br/receita/7329-salada-caesar.html">Salada Ceasar</a>
+                    <img src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/SaladCeasar.jpg" alt="Salada Ceasar">
+                </section>
+                </a>
+            </div>
         </div>
-        <div class="cards" tag="carne">
-            <section class="card">
-                <a href="https://www.tudogostoso.com.br/receita/7329-salada-caesar.html">Salada Ceasar</a>
-                <img src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/SaladCeasar.jpg" alt="Salada Ceasar">
-            </section>
-            </a>
-        </div>
-    </div>
-    <br><br><br>
-    <div class="boxes">
-        <div class="cards" tagtag="frango">
-            <section class="card">
-                <a href="https://www.tudogostoso.com.br/receita/2462-strogonoff-de-frango.html" target="_self">Salada Ceasar</a>
-                <img class="receipeImage" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/Strogonoff.webp" alt="Strogonoff de Frango">
-            </section>
-            </a>
-        </div>
-        <div class="cards" tag="salada">
-            <section class="card">
-                <a href="https://www.tudogostoso.com.br/receita/7329-salada-caesar.html">Salada Ceasar</a>
-                <img src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/SaladCeasar.jpg" alt="Salada Ceasar">
-            </section>
-            </a>
-        </div>
-        <div class="cards" tag="carne">
-            <section class="card">
-                <a href="https://www.tudogostoso.com.br/receita/7329-salada-caesar.html">Salada Ceasar</a>
-                <img src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/SaladCeasar.jpg" alt="Salada Ceasar">
-            </section>
-            </a>
+        <br><br><br>
+        <div class="boxes">
+            <div class="cards" tagtag="frango">
+                <section class="card">
+                    <a href="https://www.tudogostoso.com.br/receita/2462-strogonoff-de-frango.html" target="_self">Salada Ceasar</a>
+                    <img class="receipeImage" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/Strogonoff.webp" alt="Strogonoff de Frango">
+                </section>
+                </a>
+            </div>
+            <div class="cards" tag="salada">
+                <section class="card">
+                    <a href="https://www.tudogostoso.com.br/receita/7329-salada-caesar.html">Salada Ceasar</a>
+                    <img src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/SaladCeasar.jpg" alt="Salada Ceasar">
+                </section>
+                </a>
+            </div>
+            <div class="cards" tag="carne">
+                <section class="card">
+                    <a href="https://www.tudogostoso.com.br/receita/7329-salada-caesar.html">Salada Ceasar</a>
+                    <img src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/SaladCeasar.jpg" alt="Salada Ceasar">
+                </section>
+                </a>
+            </div>
         </div>
     </div>
 </body>
