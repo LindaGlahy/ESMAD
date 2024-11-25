@@ -18,12 +18,12 @@ body {
 }
 
 .header {
+    background-color: orange;
     overflow: hidden;
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: white;
-    color: orange;
+    color: white;
     height: 60px;
     justify-content: space-between;
     text-decoration: none;
@@ -33,7 +33,7 @@ body {
 
 .logo {
     font-size: 40px;
-    color: orange;
+    color: white;
     font-weight: 600;
     font-family: "Anton SC";
     text-decoration: none;
@@ -45,7 +45,7 @@ body {
 }
 
 .navbar>a {
-    color: orange;
+    color: white;
     justify-content: space-between;
     justify-content: end;
     float: left;
@@ -53,17 +53,6 @@ body {
     text-decoration: none;
     font-size: 18px; 
     line-height: 25px;
-}
-
-#search {
-    text-decoration: none;
-}
-
-#receitas {
-    margin-right: 20px;
-    background-color: orange;
-    border-radius: 15px;
-    text-decoration: none;
 }
 
 #receitas:hover {
@@ -79,7 +68,7 @@ body {
 }
 
 .tag {
-    width: 150px;
+    width: 200px;
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -107,22 +96,37 @@ body {
     border-bottom: 4px solid #e2e2e2;
 }
 
-@media (max-width: 768px) {
-    .tag {
-        flex: 0 0 70%; /* Cada item ocupa 70% da largura */
-        width: 100%;
-        grid-column: 1;
-    }
+.destaques {
+    background-color: orange;
+    text-align: center;
+    color: white;
+    padding: 3px;
+
 }
 
-@media (min-width: 769px) {
-    .tag {
-        flex: 0 0 30%; /* Em telas maiores, 30% da largura */
-    }
+h1 {
+    font-size: 30px;
+    text-align: center;
+    color: orangered;
+    padding-top: 12px;
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    color: orange;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: center;
+    margin: 30px;
 }
 
 p {
-    padding-left: 30px;
+    font-size: 15px;
+    text-align: center;
     color: black;
 }
 
@@ -152,17 +156,11 @@ p {
 
 .card:hover {
     transform: scale3d(1.02, 1.02, 1);
-
 }
 
 .card a {
     text-align: center;
     justify-content: center;
-}
-
-.cardName {
-    color: white;
-    z-index: 9;
 }
 
 .titlereceitas {
@@ -184,3 +182,19 @@ p {
     text-align: center;
     border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.574),#000000);
 }
+
+.pageImages {
+    align-items: center;
+}
+
+footer {
+    background-color: orange;
+    padding: 15px;
+    padding-top: 25px;
+}
+
+/*@media only screen and (max-width:550px) {
+    .boxes {
+        grid-column: 2;
+    }
+}*/

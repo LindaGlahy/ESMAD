@@ -141,7 +141,6 @@ body {
 }
 
 .card {
-    background-image: url("/TWeb/CSS/MiniProjetoIndividual/pageImages/sombreado.png");
     position: relative;
     flex: 1 1 100%;
     margin: grid-gutter 0;

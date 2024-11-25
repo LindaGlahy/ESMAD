@@ -13,103 +13,165 @@
     <link rel="stylesheet" href="yourRecipe.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <a href="#" class="logo">Your recipe<span>.</span></a>
-            <nav class="navbar">
-                <a href="#">Sobre nós </a>
-                <a href="#">Receitas </a>
-                <a href="#">Contato </a>
-            </nav>
-            <search id="search">
-                <form action="./search/">
-                  <input type="search" id="receitas" placeholder="  Search..." name="q" />
-                  <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </search>
+    <div class="header">
+        <a href="#" class="logo">Your recipe<span>.</span></a>
+        <nav class="navbar">
+            <a href="http://127.0.0.1:63404/TWeb/CSS/MiniProjetoIndividual/About.html">Sobre </a>
+            <a href="#">Receitas </a>
+            <a href="#">Contato </a>
+        </nav>
+    </div>
+    <br><br><br>
+    <div class="tagpart">
+        <div class="tag" >
+            <a href="#" target="_blank">
+                <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/principal.png">
+                <h2>Principais</h2>
+            </a>
+        </div>
+        <div class="tag" >
+            <a href="#" target="_blank">
+                <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/sobremesa.webp">
+                <h2>Sobremesas</h2>
+            </a>
+        </div>
+        <div class="tag" >
+            <a href="#" target="_blank">
+                <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/CoquetelGranizadoMelancia.webp">
+                <h2>Bebidas</h2>
+            </a>
         </div>
         <br>
-        <br>
-        <br>
-        <div class="tagpart">
-            <div class="tag" >
-                <a href="https://www.tudogostoso.com.br/receita/7329-salada-caesar.html">
-                    <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/entradas.jpg">
-                    Entradas
-                </a>
-            </div>
-            <div class="tag" >
-                <a href="#" target="_blank">
-                    <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/principal.png">
-                    Principais
-                </a>
-            </div>
-            <div class="tag" >
-                <a href="#" target="_blank">
-                    <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/sobremesa.webp">
-                    Sobremesas
-                </a>
-            </div>
-            <div class="tag" >
-                <a href="#" target="_blank">
-                    <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/CoquetelGranizadoMelancia.webp">
-                    Bebidas
-                </a>
-            </div>
-            <br>
-        </div>
-        <br>
-        <p>Nossos destaques</p>
-        <br>
-        <div class="boxes" tag="destaque">
-            <div class="cards" tagtag="frango">
-                <section class="card">
-                    <a href="https://www.tudogostoso.com.br/receita/2462-strogonoff-de-frango.html" target="_self"></a>
-                    <img class="receipeImage" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/Strogonoff.webp" alt="Strogonoff de Frango">
-                    <p class="cardName">Strogonoff de Frango</p>
-                </section>
-                </a>
-            </div>
-            <div class="cards" tag="salada">
-                <section class="card">
-                    <a href="https://www.tudogostoso.com.br/receita/7329-salada-caesar.html"></a>
-                    <img src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/SaladCeasar.jpg" alt="Salada Ceasar">
-                    Salada Ceasar
-                </section>
-                </a>
-            </div>
-            <div class="cards" tag="carne">
-                <section class="card">
-                    <a href="https://www.tudogostoso.com.br/receita/7329-salada-caesar.html">Salada Ceasar</a>
-                    <img src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/SaladCeasar.jpg" alt="Salada Ceasar">
-                </section>
-                </a>
-            </div>
-        </div>
-        <br><br><br>
+    </div>
+    <br>
+    <div class="destaques">
+        <h2 class="destaques">Nossos destaques</h2>
         <div class="boxes">
-            <div class="cards" tagtag="frango">
+            <div class="cards">
                 <section class="card">
-                    <a href="https://www.tudogostoso.com.br/receita/2462-strogonoff-de-frango.html" target="_self">Salada Ceasar</a>
-                    <img class="receipeImage" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/Strogonoff.webp" alt="Strogonoff de Frango">
+                    <a href="https://www.tudogostoso.com.br/receita/2462-strogonoff-de-frango.html" target="_blank">
+                        <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/Strogonoff.webp" alt="Strogonoff de Frango">
+                        <h1>Strogonoff de Frango</h1>
+                    </a>
                 </section>
                 </a>
             </div>
-            <div class="cards" tag="salada">
+            <div class="cards">
                 <section class="card">
-                    <a href="https://www.tudogostoso.com.br/receita/7329-salada-caesar.html">Salada Ceasar</a>
-                    <img src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/SaladCeasar.jpg" alt="Salada Ceasar">
+                    <a href="https://www.tudogostoso.com.br/receita/7329-salada-caesar.html">
+                        <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/SaladCeasar.jpg" alt="Salada Ceasar">
+                        <h1>Salada Ceasar</h1>
+                    </a>
                 </section>
                 </a>
             </div>
-            <div class="cards" tag="carne">
+            <div class="cards">
                 <section class="card">
-                    <a href="https://www.tudogostoso.com.br/receita/7329-salada-caesar.html">Salada Ceasar</a>
-                    <img src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/SaladCeasar.jpg" alt="Salada Ceasar">
+                    <a href="https://www.tudogostoso.com.br/receita/7329-salada-caesar.html">
+                        <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/SaladCeasar.jpg" alt="Salada Ceasar">
+                        <h1>Salada Ceasar</h1>
+                    </a>
                 </section>
                 </a>
             </div>
+        </div>
+        <br><br>
+    </div>
+    <br><br><br>
+    <div class="boxes">
+        <div class="cards">
+            <section class="card">
+                <a href="https://www.tudogostoso.com.br/receita/2462-strogonoff-de-frango.html" target="_blank">
+                    <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/Strogonoff.webp" alt="Strogonoff de Frango">
+                    <h1>Salada Ceasar</h1>
+                </a>
+            </section>
+            </a>
+        </div>
+        <div class="cards">
+            <section class="card">
+                <a href="https://www.tudogostoso.com.br/receita/7329-salada-caesar.html">
+                    <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/SaladCeasar.jpg" alt="Salada Ceasar">
+                    <h1>Salada Ceasar</h1>
+                </a>
+            </section>
+            </a>
+        </div>
+        <div class="cards">
+            <section class="card">
+                <a href="https://www.tudogostoso.com.br/receita/2462-strogonoff-de-frango.html" target="_blank">
+                    <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/Strogonoff.webp" alt="Strogonoff de Frango">
+                    <h1>Salada Ceasar</h1>
+                </a>
+            </section>
+            </a>
         </div>
     </div>
+    <br><br>
+    <div class="boxes">
+        <div class="cards">
+            <section class="card">
+                <a href="https://www.tudogostoso.com.br/receita/2462-strogonoff-de-frango.html" target="_blank">
+                    <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/Strogonoff.webp" alt="Strogonoff de Frango">
+                    <h1>Salada Ceasar</h1>
+                </a>
+            </section>
+            </a>
+        </div>
+        <div class="cards">
+            <section class="card">
+                <a href="https://www.tudogostoso.com.br/receita/7329-salada-caesar.html">
+                    <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/SaladCeasar.jpg" alt="Salada Ceasar">
+                    <h1>Salada Ceasar</h1>
+                </a>
+            </section>
+            </a>
+        </div>
+        <div class="cards">
+            <section class="card">
+                <a href="https://www.tudogostoso.com.br/receita/2462-strogonoff-de-frango.html" target="_blank">
+                    <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/Strogonoff.webp" alt="Strogonoff de Frango">
+                    <h1>Salada Ceasar</h1>
+                </a>
+            </section>
+            </a>
+        </div>
+    </div>
+    <br><br>
+    <div class="boxes">
+        <div class="cards">
+            <section class="card">
+                <a href="https://www.tudogostoso.com.br/receita/2462-strogonoff-de-frango.html" target="_blank">
+                    <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/Strogonoff.webp" alt="Strogonoff de Frango">
+                    <h1>Salada Ceasar</h1>
+                </a>
+            </section>
+            </a>
+        </div>
+        <div class="cards">
+            <section class="card">
+                <a href="https://www.tudogostoso.com.br/receita/7329-salada-caesar.html">
+                    <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/SaladCeasar.jpg" alt="Salada Ceasar">
+                    <h1>Salada Ceasar</h1>
+                </a>
+            </section>
+            </a>
+        </div>
+        <div class="cards">
+            <section class="card">
+                <a href="https://www.tudogostoso.com.br/receita/2462-strogonoff-de-frango.html" target="_blank">
+                    <img class="slide" src="/TWeb/CSS/MiniProjetoIndividual/pageImages/receipeImages/Strogonoff.webp" alt="Strogonoff de Frango">
+                    <h1>Salada Ceasar</h1>
+                </a>
+            </section>
+            </a>
+        </div>
+    </div>
+    <br><br>
+    <footer>
+        <div>
+            <p>@ 2024 by Linda Glahy. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
