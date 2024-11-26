@@ -29,6 +29,7 @@ body {
     text-decoration: none;
     position: fixed;
     z-index: 9;
+    box-shadow: 0 6px 10px rgba(255, 145, 0, 0.616), 0 6px 15px 0 rgba(255, 157, 0, 0.202);
 }
 
 .logo {
