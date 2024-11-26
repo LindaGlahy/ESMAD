@@ -29,7 +29,6 @@ body {
     text-decoration: none;
     position: fixed;
     z-index: 9;
-    box-shadow: 0 6px 10px rgba(255, 145, 0, 0.616), 0 6px 15px 0 rgba(255, 157, 0, 0.202);
 }
 
 .logo {
@@ -63,14 +62,12 @@ body {
 
 .tagpart {
     display: flex;
-    width: 1030px;
     gap: 16px;
     padding: 10px;
 }
 
 .tag {
-    width: 200px;
-    text-align: center;
+    width: 600px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -101,12 +98,12 @@ body {
     background-color: orange;
     text-align: center;
     color: white;
-    padding: 3px;
+    padding: 10px;
 
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     color: orangered;
     padding-top: 12px;
@@ -119,10 +116,16 @@ h2 {
     padding-bottom: 5px;
 }
 
+.title {
+    font-size: 40px;
+}
+
 h3 {
+    color: orange;
     font-size: 20px;
     text-align: center;
-    margin: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 p {
@@ -184,8 +187,15 @@ p {
     border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.574),#000000);
 }
 
-.pageImages {
-    align-items: center;
+.gifbox {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+
+.frase {
+    margin: 15px;
+    padding-bottom: 20px;
 }
 
 footer {

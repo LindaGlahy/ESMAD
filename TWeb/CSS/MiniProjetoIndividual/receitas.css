@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "poppins", "sans-serif";
+}
+
+.anton-sc-regular {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.header {
+    background-color: orange;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 60px;
+    justify-content: space-between;
+    text-decoration: none;
+    position: fixed;
+    z-index: 9;
+}
+
+.logo {
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    font-family: "Anton SC";
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.logo span {
+    color: orangered;
+}
+
+.navbar>a {
+    color: white;
+    justify-content: space-between;
+    justify-content: end;
+    float: left;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+}
+
+p {
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+
+h1 {
+    font-size: 40px;
+    color: orangered;
+    margin-left: 150px;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: start;
+    color: orange;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: end;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 0.4fr 2fr 1.5fr;
+    grid-template-areas:
+        "sidebar content1 content1 content1"
+        "sidebar content2 content2 content2"
+        "sidebar main main main"
+        "sidebar main main main";
+    grid-gap: 0.4rem;
+    text-align: center;
+    margin: 50px;
+}
+
+@media only screen and (max-width:500px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 0.1fr 2fr 1fr 1fr 0.1fr;
+        grid-template-areas:
+            "content1"
+            "content2"
+            "sidebar"
+            "main";
+    }
+}
+
+main {
+    background-color: white;
+    grid-area: main;
+    padding: 20px;
+    margin-right: 90px;
+    border-radius: 20px;
+}
+
+#sidebar {
+    background-color: white;
+    grid-area: sidebar;
+    padding: 20px;
+    margin-left: 90px;
+    border-radius: 20px;
+}
+
+#content1 {
+    background-color: white;
+    grid-area: content1;
+    margin-right: 90px;
+    border-radius: 20px;
+}
+
+iframe {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#content2 {
+    background-color: white;
+    grid-area: content2;
+    padding: 20px;
+    margin-right: 90px;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: orange;
+    padding: 15px;
+    padding-top: 25px;
+}
