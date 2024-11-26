@@ -82,7 +82,7 @@ h3 {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 3fr 0.4fr 2fr 1.5fr;
+    grid-template-rows: 3fr 0.4fr 2fr 4fr;
     grid-template-areas:
         "sidebar content1 content1 content1"
         "sidebar content2 content2 content2"
@@ -96,7 +96,7 @@ h3 {
 @media only screen and (max-width:500px) {
     .container {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.1fr 0.1fr 2fr 1fr 1fr 0.1fr;
+        grid-template-rows: 2fr 0.4fr ;
         grid-template-areas:
             "content1"
             "content2"
@@ -111,6 +111,7 @@ main {
     padding: 20px;
     margin-right: 90px;
     border-radius: 20px;
+    height: 498px;
 }
 
 #sidebar {
@@ -119,6 +120,7 @@ main {
     padding: 20px;
     margin-left: 90px;
     border-radius: 20px;
+    height: 900px;
 }
 
 #content1 {
